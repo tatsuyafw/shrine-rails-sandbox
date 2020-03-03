@@ -8,6 +8,11 @@ Shrine.storages = {
 
 Shrine.plugin :activerecord
 Shrine.plugin :cached_attachment_data
+
+# MIME Type
+Shrine.plugin :instrumentation
+Shrine.plugin :determine_mime_type
+
 Shrine.plugin :restore_cached_data
 Shrine.plugin :validation
 Shrine.plugin :validation_helpers
